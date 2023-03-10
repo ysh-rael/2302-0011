@@ -1,0 +1,134 @@
+* {
+	color: #ccc;
+}
+
+	body {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+
+		background-color: #eeeefa;
+	}
+	main{ 
+		margin-top: 100px;
+		min-width: 240px;
+		padding: 10px;
+		border-radius: 10px;
+
+		border: 3px double gray; 
+		background-color: #2A2A2A;
+		box-shadow: rgb(0,0,0, .8);
+	}
+	main > div {
+		margin-top: 20px;
+	}
+	main > div > div, input, select{
+		border: none;
+		padding: 5px 10px;
+		border-radius: 5px;
+
+		background-color: #181818;
+	}
+	main > div > div {
+		display: flex;
+		justify-content: space-between;
+
+		box-sizing: border-box;
+		width: 100%;
+		margin-top: 7px;
+	}
+
+	span#box_inpt_bttn-add {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		padding: 0px 10px 0 0;
+	}
+	input[type=text] {
+		color: orangered;
+	}
+	input[type=text]:focus{
+		outline: none;
+		box-shadow: -1px 2px 2px rgb(190,190,190, .4)
+	}
+	span.bttns {
+		display: flex;
+		justify-content: space-between;
+		width: 60px;
+
+		/*background-color: yellow;*/
+	}
+	button > img {
+		width: 10px;
+		height: 10px;
+		transform: scale(1.5);
+		user-select: none;
+	}
+	button {
+		padding: 4px 7px;
+		border-radius: 25px;
+		border: none;
+
+		background-color: #2B282Cff;
+	}
+	button:active {
+		background-color: #1B181Cff
+	}
+	.confirm {
+		background-color: rgb(88, 67, 95)
+	}
+	#inpt_edit {
+		position: relative;
+
+		box-shadow: none;
+	}
+	#valorAPagar {
+		margin-left: 1rem;
+		width: 6rem;
+	}
+	#resultado {
+		display: flex;
+		margin-top: 0px;
+		margin-bottom: .6rem;
+		justify-content: space-between;
+	}
+
+	@keyframes treme {
+		0% {
+			padding-left: 10px;
+		}
+		20% {
+			padding-left: 0px;
+			padding-right: 10px;
+		}
+		40% {
+			padding-left: 10px;
+		}
+		60% {
+			padding-left: 0px;
+			padding-right: 10px;
+		}
+		80% {
+			padding-left: 10px;
+		}
+		100% {
+			padding-left: 0;
+		}
+	}
+
+	#pcfp_alert {
+		display: flex;
+		width: 100%;
+		background-color: rgba(253, 0, 0, 0.212);
+		padding: .2rem 0.1rem;
+		box-shadow: 1px 1px 5px #0000003d;
+		
+	}
+	#pcfp_alert > span { 
+		animation: treme 1.3s;
+		margin: auto; 
+	}
+	.hiddenThis {
+		display: none !important;
+	}

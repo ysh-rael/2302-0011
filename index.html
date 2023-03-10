@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CRUD in TO-DO LIST</title>
+	<link rel="stylesheet" type="text/css" href="style.css" id="style">
+</head>
+<body>
+	<main>
+		<div id="resultado">
+			<span>Falta: R$100</span>
+			<span>Total: R$ 520,25</span>
+
+		</div>
+		<div id="pcfp_alert" class="hiddenThis">
+			<span>Valor inserido ultrapassa o total.</span>
+		</div>
+		<span id="box_inpt_bttn-add">
+			<select name="formasPagamento" id="formasPagamento">
+				<option value="">Selecione</option>
+				<option value="Dinheiro">DINHEIRO</option>
+				<option value="Crédito-visa">CRÉDITO - VISA</option>
+				<option value="Débito-alelo">DÉBITO - ALELO</option>
+				<option value="Crédito-mastercard">CRÉDITO - MASTERCARD</option>
+				<option value="Pix">PIX</option>
+				<option value="FÉ">FÉ</option>
+			</select>
+			<!-- <input type="text" id="inptWithTo-do" placeholder="Write your task here"> -->
+			<input autofocus="true" type="text" id="valorAPagar" placeholder="R$">
+			<button id="add"><img src="imagens/add.svg"></button>
+		</span>
+		
+		<div id="listWithTo-do-day">
+			<!-- 
+				<div> (task)
+					<span>(text)
+					<span>(buttons)
+						<button>
+						<button>
+					</span>
+				</div>
+			-->
+			
+			
+		</div>
+		<center>
+			<button disabled="disabled">Salvar</button>
+		</center>
+	</main>
+<script src="main.js" id="javaScript"></script>
+</body>
+</html>
