@@ -46,7 +46,7 @@ const addTaskInList = () => {
 
 	
 
-	if (continuar||1==1) {
+	if (continuar) {
 
 		const inpt_Task_v = ` <span>${select_v.text}  </span> <span id="_valor">R$ ${valorAPagar.value}</span>`
 		const task 		  = document.createElement('div')
